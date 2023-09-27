@@ -14,12 +14,10 @@ Os arquivos da documentação deste projeto estão na pasta [/docs](/docs), e o 
 
 # Releases
 
-- Nome do Projeto ✅
-- Nome do Grupo ✅
-- Descrição do Projeto ✅
-- Configuração do Git Pages ✅
-- Colocando nomes ✅
-- Análise de requisitos funcionais e não-funcionais ✅
-- Diagrama de Caso de Usos ✅
-- Atualização do Diagrama de Caso de Usos ✅
-- Descrição dos Casos de Uso ✅
+- [x] Nome do Projeto
+- [x] Nome do Grupo 
+- [x] Descrição do Projeto  
+- [x] Colocando nomes dos integrantes
+- [x] Análise de requisitos funcionais e não-funcionais 
+- [x] Diagrama de Caso de Usos 
+- [x] Descrição dos Casos de Uso 
