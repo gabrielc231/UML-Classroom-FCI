@@ -10,6 +10,8 @@
 - [Autores](#autores)
 - [Descrição do projeto](#descrição-do-projeto)
 - [Análise de requisitos funcionais e não-funcionais](#análise-de-requisitos-funcionais-e-não-funcionais)
+    - [Requisitos funcionais](#requisitos-funcionais)
+    - [Requisitos não-funcionais](#requisitos-não-funcionais)
 - [Diagrama de casos de uso](#diagrama-de-casos-de-uso)
 - [Descrição dos casos de uso](#descrição-dos-casos-de-uso)
   - [Caso de Uso: Fazer Login](#caso-de-uso-fazer-login)
@@ -34,36 +36,34 @@ A tarefa de registrar a presença dos alunos em uma escola ainda é feita de for
 
 # Análise de requisitos funcionais e não-funcionais
 
-<h3>Requisitos funcionais</h3>
-<ol>
-    <li>Adicionar ou Remover falta para os alunos que não responderem a chamada de presença.</li>
-    <li>A chamada deve ocorrer todos os dias e em dois momentos (inicio do dia e após o intervalo).</li>
-    <li>Gerar relatórios de faltas agrupados por data, ano letivo, turma, disciplina, professor ou aluno.</li>
-    <li>Notificar os responsáveis via e-mail caso a presença às aulas do aluno, dadas até o momento, estiverem abaixo de 80%.</li>
-    <li>Caso o aluno não comparecer em pelo menos 75% do total de aulas do ano será reprovado.</li>
-    <li>Cada professor deve ter um nome de usuário (username) e uma senha (password) para entrar no sistema.</li>
-</ol>
+### Requisitos funcionais
 
-<h3>Requisitos não-funcionais</h3>
-<ol>
-    <li>O sistema deve ser fácil e intuitivo.</li>
-    <li>O sistema deve ser implementado em web: HTML, CSS e JavaScript.</li>
-    <li>O sistema deve utilizar um banco de dados.</li>
-    <li>O sistema deve permitir acessos simultâneos.</li>
-    <li>O sistema deve ser acessível a todos (fonte ajustável, etc).</li>
-    <li>O sistema deve ser acessado de qualquer navegador web, incluindo dispositivos móveis.</li>
-    <li>O sistema deve ser responsivo na web e mobile.</li>
-    <li>Os relatórios gerados devem ser enviados para os responsáveis semestralmente.</li>
-    <li>O nome de usuário de cada professor deve conter ao menos 10 caracteres.</li>
-    <li>Os usuários devem conter um identificador único.
-    <li>A senha de cada professor deve conter no minímo 10 caracteres alfanuméricos.</li>
-</ol>
+1. Adicionar ou Remover falta para os alunos que não responderem a chamada de presença.
+2. A chamada deve ocorrer todos os dias e em dois momentos (inicio do dia e após o intervalo).
+3. Gerar relatórios de faltas agrupados por data, ano letivo, turma, disciplina, professor ou aluno.
+4. Notificar os responsáveis via e-mail caso a presença às aulas do aluno, dadas até o momento, estiverem abaixo de 80%.
+5. Caso o aluno não comparecer em pelo menos 75% do total de aulas do ano será reprovado.
+6. Cada professor deve ter um nome de usuário (username) e uma senha (password) para entrar no sistema.
+
+
+### Requisitos não-funcionais
+
+1. O sistema deve ser fácil e intuitivo.
+2. O sistema deve ser implementado em web: HTML, CSS e JavaScript.
+3. O sistema deve utilizar um banco de dados.
+4. O sistema deve permitir acessos simultâneos.
+5. O sistema deve ser acessível a todos (fonte ajustável, etc).
+6. O sistema deve ser acessado de qualquer navegador web, incluindo dispositivos móveis.
+7. O sistema deve ser responsivo na web e mobile.
+8. Os relatórios gerados devem ser enviados para os responsáveis semestralmente.
+9. O nome de usuário de cada professor deve conter ao menos 10 caracteres.
+10. Os usuários devem conter um identificador único.
+11. A senha de cada professor deve conter no minímo 10 caracteres contendo letras e números.
+
 
 # Diagrama de casos de uso
 
-<div align="center">
-<img src="src/../../src/Diagrama%20de%20casos%20e%20uso.png" width="1024px" />
-</div>
+![Diagrama de casos e uso](/images/Diagrama%20de%20casos%20e%20uso.png "Diagrama de casos e uso")
 
 # Descrição dos casos de uso
 
@@ -78,18 +78,18 @@ A tarefa de registrar a presença dos alunos em uma escola ainda é feita de for
 **Pós-condição:** O professor consegue acessar o sistema.
 
 **Fluxo Básico (Professor acessa o sistema):**
-<ol>
-    <li>O professor insere suas credenciais (username e senha);</li>
-    <li>O sistema verifica as credenciais e autentica o professor;</li>
-    <li>O professor entra no Sistema.</li>
-</ol>
+
+1. O professor insere suas credenciais (username e senha);
+2. O sistema verifica as credenciais no Banco de Dados e autentica o professor;
+3. O professor entra no Sistema.
+
 
 **Fluxo Alternativo (Professor não consegue acessar o sistema):**
-<ol>
-    <li>O professor insere suas credenciais (nome de usuario e senha);</li>
-    <li>O sistema não consegue verificar as credenciais informadas (bug ou erro de digitação);</li>
-    <li>O Professor deve executar a ação novamente.</li>  
-</ol>
+
+1. O professor insere suas credenciais (nome de usuario e senha);
+2. O sistema não consegue verificar as credenciais informadas no Banco de Dados (bug ou erro de digitação);
+3. O Professor deve executar a ação novamente.  
+
 
 ## Caso de Uso: Alterar Senha
 
@@ -102,18 +102,18 @@ A tarefa de registrar a presença dos alunos em uma escola ainda é feita de for
 **Pós-condição:** A senha do professor é alterada no sistema.
 
 **Fluxo Básico (Professor troca de senha):**
-<ol>
-    <li>O professor acessa a opção de alterar senha no sistema;</li>
-    <li>O professor fornece a senha atual e a nova senha;</li>
-    <li>O sistema verifica a senha atual, atualiza a senha e confirma a alteração.</li>
-</ol>
+
+1. O professor acessa a opção de alterar senha no sistema;
+2. O professor fornece a senha atual e a nova senha;
+3. O sistema verifica a senha atual, atualiza a senha e confirma a alteração.
+
 
 **Fluxo Alternativo (Professor não consegue trocar de senha):**
-<ol>
-    <li>O professor insere senha atual incorreta;</li>
-    <li>O sistema exibe uma mensagem de erro;</li>
-    <li>O Professor deve executar a ação novamente.</li>  
-</ol>
+
+1. O professor insere senha atual incorreta;
+2. O sistema exibe uma mensagem de erro;
+3. O Professor deve executar a ação novamente.  
+
 
 ## Caso de Uso: Realizar Chamada
 
@@ -123,31 +123,31 @@ A tarefa de registrar a presença dos alunos em uma escola ainda é feita de for
 
 **Pré-condição:** O professor deve estar conectado no sistema.
 
-**Pós-condição:** A chamada da turma é registrada no sistema.
+**Pós-condição:** A chamada da turma é registrada no Banco de Dados.
 
 **Fluxo Básico (Professor faz a chamada):**
-<ol>
-    <li>O professor seleciona a turma e a data para a chamada;</li>
-    <li>O sistema exibe a lista de alunos da turma.</li>
-    <li>O professor marca o aluno caso este esteja ausente.</li>
-    <li>O sistema registra as informações de presença/ausência.</li>
-</ol>
+
+ 1. O professor seleciona a turma e a data para a chamada;
+ 2. O sistema exibe a lista de alunos da turma.
+ 3. O professor marca o aluno caso este esteja ausente.
+ 4. O sistema registra as informações de presença/ausência.
+
 
 **Fluxo Alternativo (Aluno teve imprevisto e chegou após a chamada):**
-<ol>
-    <li>O professor seleciona a turma do aluno e a data;</li>
-    <li>O sistema exibe a lista de alunos da turma, já com os dados salvos da chamada;</li>
-    <li>O professor desmarca a ausência de tal aluno;</li>  
-    <li>O sistema atualiza as informações de presença ou ausência.</li>
-</ol>
+
+1. O professor seleciona a turma do aluno e a data;
+2. O sistema exibe a lista de alunos da turma, já com os dados salvos da chamada;
+3. O professor desmarca a ausência de tal aluno;  
+4. O sistema atualiza as informações de presença ou ausência.
+
 
 **Fluxo Alternativo (Professor marcou algo errado):**
-<ol>
-    <li>O professor seleciona a turma e a data;</li>
-    <li>O sistema exibe a lista de alunos da turma, com a última alteração salva;</li>
-    <li>O professor corrige o que precisa;</li>  
-    <li>O sistema atualiza as informações de presença ou ausência.</li>
-</ol>
+
+1. O professor seleciona a turma e a data;
+2. O sistema exibe a lista de alunos da turma, com a última alteração salva;
+3. O professor corrige o que precisa;  
+4. O sistema atualiza as informações de presença ou ausência.
+
 
 ## Caso de Uso: Confirmar os Dados
 
@@ -160,17 +160,17 @@ A tarefa de registrar a presença dos alunos em uma escola ainda é feita de for
 **Pós-condição:** Os relatórios são gerados com as informações relacionados a presença de cada aluno.
 
 **Fluxo Básico (Professor confirma dados):**
-<ol>
-    <li>Para confirmar que a chamada foi realizada, professor clica no botão: <b> Confirmar Dados. </b> </li>
-    <li>Quando este botão é pressionado, o sistema gera relatórios de faltas agrupados por data, ano do ensino, turma, professor, disciplina ou aluno.</li>
-</ol>
+
+1. Para confirmar que a chamada foi realizada, professor clica no botão: **Confirmar Dados.** 
+2. Quando este botão é pressionado, o sistema gera relatórios de faltas agrupados por data, ano do ensino, turma, professor, disciplina ou aluno.
+
 
 **Fluxo Alternativo (Professor não conseguiu confirmar dados):**
-<ol>
-    <li>O professor clica no botão: <b>Confirmar Dados</b>.</li>
-    <li>O sistema não gera os relatórios por motivos de bug.</li>
-    <li>O professor deve executar a ação novamente.</li>  
-</ol>
+
+1. O professor clica no botão: **Confirmar Dados**.
+2. O sistema não gera os relatórios por motivos de bug.
+3. O professor deve executar a ação novamente.  
+
 
 ## Caso de Uso: Enviar Notificação via Email aos Responsáveis
 
@@ -183,23 +183,36 @@ A tarefa de registrar a presença dos alunos em uma escola ainda é feita de for
 **Pós-condição:** As notificações são enviadas aos responsáveis.
 
 **Fluxo Básico (Notificação é enviada):**
-<ol>
-    <li>O sistema gera um relatório da taxa de presença do aluno até o momento;</li>
-    <li>O sistema calcula a porcentagem da presença do aluno em relação ao número total de aulas ministradas;</li>
-    <li>Envia a notificação se o resultado obtido for menor que 80%, para que os pais/responsáveis tomem as medidas necessárias.</li>
-    <li>O sistema registra a data e hora do envio da notificação.</li>
-</ol>
+
+1. O sistema gera um relatório da taxa de presença do aluno até o momento;
+2. O sistema calcula a porcentagem da presença do aluno em relação ao número total de aulas ministradas;
+3. Envia a notificação se o resultado obtido for menor que 80%, para que os pais/responsáveis tomem as medidas necessárias.
+4. O sistema registra a data e hora do envio da notificação.
+
 
 **Fluxo Alternativo (Erro no envio da notificação via Email):**
-<ol>
-    <li>Ocorreu um erro durante o envio da notificação por e-mail;</li>
-    <li>O sistema registra o erro;</li>
-    <li>O sistema tenta reenviar a notificação, até obter êxito.</li>  
-</ol>
+
+1. Ocorreu um erro durante o envio da notificação por e-mail;
+2. O sistema registra o erro;
+3. O sistema tenta reenviar a notificação, até obter êxito.  
+
 
 # Diagrama de sequencia
 
-*&lt;Diagrama de ordem e interação dos objetos&gt;*
+ <figure>
+ <center>
+  <img src="../images/Diagrama%20Sequencia.png"   alt="registro de presença" style="width:100%">
+  <figcaption>Diagrama de Sequencia de registro de presença.</figcaption>
+  </center>
+</figure> 
+
+ <figure>
+ <center>
+  <img src="../images/Diagrama%20Sequencia%202.png"   alt="alteração de senha" style="width:100%">
+  <figcaption>Diagrama de Sequencia de alteração de senha.</figcaption>
+  </center>
+</figure> 
+
 
 # Diagrama de classes
 
