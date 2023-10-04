@@ -20,4 +20,6 @@ Os arquivos da documentação deste projeto estão na pasta [/docs](/docs), e o 
 - [x] Colocando nomes dos integrantes
 - [x] Análise de requisitos funcionais e não-funcionais 
 - [x] Diagrama de Caso de Usos 
-- [x] Descrição dos Casos de Uso 
+- [x] Descrição dos Casos de Uso
+- [x] Diagrama de Sequencias 
+- [x] Github Pages
