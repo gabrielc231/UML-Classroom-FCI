@@ -23,3 +23,7 @@ Os arquivos da documentação deste projeto estão na pasta [/docs](/docs), e o 
 - [x] Descrição dos Casos de Uso
 - [x] Diagrama de Sequencias 
 - [x] Github Pages
+- [x] Diagrama de Classes
+- [x] Diagrama de Componentes
+- [x] Decisões de Arquitetura
+- [x] Diagrama de Implementação 
