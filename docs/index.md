@@ -23,6 +23,8 @@
 - [Diagrama de classes](#diagrama-de-classes)
 - [Diagrama de Componentes](#diagrama-de-componentes)
 - [Decisões de arquitetura](#decisões-de-arquitetura)
+- [Tecnologias Utilizadas](#tecnologias-utilizadas)
+  - [Estrutura do Projeto](#estrutura-do-projeto)
 - [Diagrama de implantação](#diagrama-de-implantação)
 - [Referências](#referências)
 
@@ -216,21 +218,55 @@ A tarefa de registrar a presença dos alunos em uma escola ainda é feita de for
 
 # Diagrama de classes
 
-*&lt;Diagrama de relacionamento entre classes para os seus atributos e operações&gt;*
+ <figure>
+ <center>
+  <img src="../images/Diagrama%20Classes.png"   alt="alteração de senha" style="width:100%">
+  </center>
+</figure>
 
 # Diagrama de Componentes
 
-*&lt;Diagrama para exibir a relação estrutural dos componentes de um sistema de software&gt;*
+ <figure>
+ <center>
+  <img src="../images/Diagrama%20Componentes.png"   alt="alteração de senha" style="width:100%">
+  </center>
+</figure>
 
 # Decisões de arquitetura
 
-*&lt;Descrever a infraestrutura escolhida para arquitetura do projeto&gt;*
+# Tecnologias Utilizadas
+
+Este sistema utiliza as tecnologias presente na MERN stack:
+- **MongoDB**
+- **Express.js**
+- **React.js**
+- **Node.js**
+
+Por se tratar de ferramentas de uso comum no mercado, todas compatíveis com o a linguagem escolhida `javascript`.
+## Estrutura do Projeto
+
+A estrutura do projeto está organizada da seguinte forma:
+
+- *src:* Contém os arquivos de código-fonte
+
+- *client*: Armazena os arquivos como HTML, CSS e scripts JavaScript do lado do cliente.
+
+- *config:* Contém configurações do banco de dados, autenticação e outras configurações do sistema.
 
 # Diagrama de implantação
 
-*&lt;Diagrama para exibir o relacionamento de hardware e software no projeto&gt;*
+ <figure>
+ <center>
+  <img src="../images/Diagrama%20Implementacao.png"   alt="alteração de senha" style="width:100%">
+  </center>
+</figure>
 
 # Referências
 
-*&lt;Lista de referências&gt;*
+**Material de aula de Projeto de Software**
 
+**https://lucid.app/**
+
+**https://www.mongodb.com/mern-stack**
+
+**https://www.youtube.com/watch?v=nTtQwGoUUNc**
